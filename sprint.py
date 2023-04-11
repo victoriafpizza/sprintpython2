@@ -1,10 +1,14 @@
-# print, input, atribuição de variaveis, operadores de comparação, fstring com resultados, informar requisitos de preenchimentos.
 
-print("Gostara de saber qual é a nossa ODS?")
+print('''Gostara de saber qual é a nossa ODS?
+
+[1] sim
+[2] não
+      
+      ''')
 resposta = input()
 
-if resposta == "sim":
-    ods = 11
+if resposta == 1:
+    ods = 11.6
     print(f"Tornar as cidades e comunidades mais inclusiva, seguras, resilientes e sustentáveis: {ods}")
-
-print()
+else:
+    print("que pena!")
