@@ -1,36 +1,14 @@
+import random 
 
-# print('''Gostara de saber qual é a nossa proposta de solução?
-# [1] sim
-# [2] não      
-# ''')
-# resposta = int(input())
+sorteio = random.randint(1,5)
 
-# ods = 11.6
+if sorteio == 1 : nomefunc = "astrogildo"
+elif sorteio == 2 : nomefunc = "berisvaldo"
+elif sorteio == 3 : nomefunc = "Gumercindo"
+elif sorteio == 4 : nomefunc = "Pafuncia"
+else : nomefunc = "tiburcio" 
 
-# if resposta == 1:
-    
-#     print(f" \nA proposta de solução tem o foco na reciclagem. E a ods é tornar as cidades e comunidades mais inclusiva, seguras, resilientes e sustentáveis, e nossa foi a {ods}")
-# else:
-    # print("que pena!")
-
-
-
-# import random 
-
-# sorteio = random.randint(1,5)
-
-# if sorteio == 1 : nomefunc = "astrogildo"
-# elif sorteio == 2 : nomefunc = "berisvaldo"
-# elif sorteio == 3 : nomefunc = "Gumercindo"
-# elif sorteio == 4 : nomefunc = "Pafuncia"
-# else : nomefunc = "tiburcio" 
-
-print(f"Bem-vindo a reUse. \n  Por favor insira seu PIN.")
-pin = int(input())
-
-if pin ==- True :
-    print("Bem vindo, por favor selecione qual material você gostaria de descartar\n [1] Papel \n [2] Metal \n [3] Plástico \n [4] Vdiro")
-
+print(f"Bem-vindo a Vinheria Agnelo. \n O funcionario {nomefunc} vai acompanha-la nessa compra.")
 
 print("informe seu nome")
 nome = input()
