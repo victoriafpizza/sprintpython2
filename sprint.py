@@ -2,7 +2,7 @@
 print(f"Bem-vindo a reUse. \n  Por favor insira seu PIN .")
 pin = int(input())
 
-# Reconhecendo a identificação e 
+# Reconhecendo a identificação e recebendo a infromação do material reciclado
 if pin == 123456 :
     nome = "Astrogildo"
     print(f"Bem vindo {nome}, por favor selecione qual material você gostaria de descartar\n [1] \t Papel \n [2] \t Metal \n [3] \t Plástico \n [4] \t Vidro")
@@ -12,20 +12,11 @@ elif pin == 654321 :
 else :
     print("Não é cliente da reUse?! Se cadastre através do QR CODE abaixo! \nOu apenas descarte o lixo do outro lado da lixeira.")
 
-print("quantos quilos voce reciclou?")
-kgsReciclados = int(input())
 
-continua = "sim"
-while continua.lower == "sim" : 
-    print("Por favor selecione qual material você gostaria de descartar\n [1] \t Papel \n [2] \t Metal \n [3] \t Plástico \n [4] \t Vidro")
 
-    print("deseja continuar reciclando? (responda sim ou nao)")
-    continua = input()
 
-    subtotal = total = 0
 
-#variaveis para ajudar no calculo dos premios
-
+#variaveis para ajudar no calculo dos prêmios
 match reciclagem :
     case 1:
         pontuacao = 10 * kgsReciclados
@@ -44,6 +35,17 @@ match reciclagem :
         msgfinal += f"voce reciclou {kgsReciclados}, \nsua pontuação para premios é {pontuacao}"
     case _ :       
         print(" por favor insira quantos quilos voce reciclou!")
+    
+
+continua = "sim"
+
+while continua.lower == "sim" : 
+    print("Por favor selecione qual material você gostaria de descartar\n [1] \t Papel \n [2] \t Metal \n [3] \t Plástico \n [4] \t Vidro")
+
+    print("deseja continuar reciclando? (responda sim ou nao)")
+    continua = input()
+
+    subtotal = total = 0
 
 print(f"seu total de quilos reciclados é {kgsReciclados} o seu total de pontos é {pontuacao}")
 

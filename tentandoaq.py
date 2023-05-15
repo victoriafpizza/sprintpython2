@@ -1,0 +1,1 @@
+# Tentando fazer o de python mas de outra forma, pode ser que de certo - emma
