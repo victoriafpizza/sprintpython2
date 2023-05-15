@@ -24,8 +24,8 @@ while continua.lower == "sim" :
 
 #variaveis para ajudar no calculo dos premios
 
- match reciclagem :
-     case 1:
+match reciclagem :
+    case 1:
         pontuacao = 10 * kgsReciclados
          msgfinal +=f"voce reciclou {kgsReciclados}, \n sua pontuação para premios é: {pontuacao}"
      case 2:
