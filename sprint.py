@@ -1,110 +1,68 @@
 
-# print('''Gostara de saber qual é a nossa proposta de solução?
-# [1] sim
-# [2] não      
-# ''')
-# resposta = int(input())
-
-# ods = 11.6
-
-# if resposta == 1:
-    
-#     print(f" \nA proposta de solução tem o foco na reciclagem. E a ods é tornar as cidades e comunidades mais inclusiva, seguras, resilientes e sustentáveis, e nossa foi a {ods}")
-# else:
-    # print("que pena!")
-
-
-
-# import random 
-
-# sorteio = random.randint(1,5)
-
-# if sorteio == 1 : nomefunc = "astrogildo"
-# elif sorteio == 2 : nomefunc = "berisvaldo"
-# elif sorteio == 3 : nomefunc = "Gumercindo"
-# elif sorteio == 4 : nomefunc = "Pafuncia"
-# else : nomefunc = "tiburcio" 
-
-print(f"Bem-vindo a reUse. \n  Por favor insira seu PIN.")
+print(f"Bem-vindo a reUse. \n  Por favor insira seu PIN .")
 pin = int(input())
 
-if pin ==- True :
-    print("Bem vindo, por favor selecione qual material você gostaria de descartar\n [1] Papel \n [2] Metal \n [3] Plástico \n [4] Vdiro")
-
-
-print("informe seu nome")
+print("Insira seu nome, para um atendimento personalizado")
 nome = input()
-print("informe seu cep")
-cep = input()
-print("iforme seu ano de nascimento")
-anonasc = int(input())
 
-idade = 2023 - anonasc
-if idade < 18 : 
-    print(f"{nome} não é permitida a venda para menores de 18 anos")
+if pin == 123456 :
+    print(f"Bem vindo {nome}, por favor selecione qual material você gostaria de descartar\n [1] Papel \n [2] Metal \n [3] Plástico \n [4] Vidro")
 else :
-    print("continua aqui")
+    print("Não é cliente da reUse?! Se cadastre através do QR CODE abaixo!")
 
-#variaveis para ajudar nos calculos 
-
-subtotal = total = 0 
-msgfinal = f"dados da compra: \n Atendido por {nomefunc}\n Cliente: {nome}\n Itens da Compra \t Valor \tQuantidade \tSubtotal\n"
+print("quantos quilos voce reciclou?")
+kgsReciclados = int(input())
 
 continua = "sim"
 while continua.lower == "sim" : 
-    print("escolha um dos vinhos d lista \n (1) vinho suave tinto \t R$ 15.00 \n (2)vinho seco tinto \t R$ 25.00\n (3) vinho branco suave \t R$ 35.00 \n (4) vinho seco branco \t 30.00 \n (5) vinho sem alcool \t R$ 40.00 \n")
+    print("Por favor selecione qual material você gostaria de descartar\n [1] Papel \n [2] Metal \n [3] Plástico \n [4] Vidro")
 
-    print("deseja continuar a compra? (responda sim ou nao)")
+    print("deseja continuar reciclando? (responda sim ou nao)")
     continua = input()
 
     subtotal = total = 0
 
-msgfinal = f"Dados da compra: \n Atendido por:{nomefunc} \n itens da compra: \t valor: \t quantidade \t sutotal \t"
+#variaveis para ajudar no calculo dos premios
 
-continua = "sim"
+ match reciclagem :
+     case 1:
+        pontuacao = 10 * kgsReciclados
+         msgfinal +=f"voce reciclou {kgsReciclados}, \n sua pontuação para premios é: {pontuacao}"
+     case 2:
+         pontuacao = 20 * kgsReciclados
+         msgfinal +=f"voce reciclou {kgsReciclados}, \n sua pontuação para premios é {pontuacao}"
+     case 3 :
+         pontuacao = 30 * kgsReciclados
+         msgfinal +=f"voce reciclou {kgsReciclados}, \n sua pontuação para premios é {pontuacao}"
+     case 4 : 
+         pontuacao = 40 * kgsReciclados
+         msgfinal +=f"voce reciclou {kgsReciclados}, \n sua pontuação para premios é {pontuacao}"
+     case 5 : 
+         pontuacao = 50 * kgsReciclados
+         msgfinal +=f"voce reciclou {kgsReciclados}, \n sua pontuação para premios é {pontuacao}"
+     case _ :       
+         print(" por favor insira quantos quilos voce reciclou!")
 
-while continua.lower() == "sim":
-    rint(f"esolha um dos vinhos da lista (1) vinho suave tinto \t R$ 15.00 \n (2)vinho seco tinto \t R$ 25.00\n (3) vinho branco suave \t R$ 35.00 \n (4) vinho seco branco \t 30.00 \n (5) vinho sem alcool \t R$ 40.00 \n")
+print(f"seu total de quilos reciclados é {kgsReciclados} o seu total de pontos é {pontuacao}")
 
-vinho = int(input())
-print("em qual qualtidade deseja adquirir este vinho?")
-quantidade = int(input())
-
-match vinho :
-    case 1:
-        subtotal = 15 * quantidade
-        msgfinal +=f"vinho suave tinto \t R$ 15.00 \t {quantidade}\t R$ {subtotal:2f}\n"
-    case 2:
-        subtotal = 25 * quantidade
-        msgfinal +=f"vinho seco tinto \t R$ 25.00 \t {quantidade}\t R$ {subtotal:2f}\n"
-    case 3 :
-        subtotal = 35 * quantidade
-        msgfinal +=f"vinho suave branco \t R$ 35.00 \t {quantidade}\t R$ {subtotal:2f}\n"
-    case 4 : 
-        subtotal = 30 * quantidade
-        msgfinal +=f"vinho seco branco \t R$ 35.00 \t {quantidade}\t R$ {subtotal:2f}\n"
-    case 5 : 
-        subtotal = 40 * quantidade
-        msgfinal +=f"suco de uva \t R$ 40.00 \t {quantidade}\t R$ {subtotal:2f}\n"
-    case _ :
-        print(" por favor, escolha uma das opções da lista")
-
-total += subtotal
+if pontuacao > 100 :
+    print("voce tem direito a ...")
+elif pontuacao > 200 :
+    print("voce tem direito a ...")
+elif pontuacao > 300 :
+    print("voce tem direito a ...")
+elif pontuacao > 400 :
+    print("voce tem direito a ...")
+elif pontuacao > 500 :
+    print("voce tem direito a ...")
+else :
+    print("verifique seus dados, e continue reciclando com a Cyber Wave!")
 
 print("deseja continuar comprando? \n (responda sim ou não)")
 continua = input()
 
-msgfinal = f"Dados dA COMPRA: \n"
+print(f"{nome}, foi um prazer atende-lo. Volte em breve!")
+
+msgfinal = f"Sua pontuação final é {pontuacao}, volte em breve {nome}"
 
 print(msgfinal)
-
-print(f"totla da compra: R$ {total:.2f}")
-
-frete = total / 2
-
-if total < 200 :
-    print("valor do frete")
-else : 
-    print("FRETE GRATIS")
-
-print(f"{nome}, foi um prazer atende-lo. Volte em breve!")
