@@ -42,7 +42,7 @@ msgfinal = f"Dados da compra: \n Atendido por:{nomefunc} \n itens da compra: \t 
 continua = "sim"
 
 while continua.lower() == "sim":
-    rint(f"esolha um dos vinhos da lista (1) vinho suave tinto \t R$ 15.00 \n (2)vinho seco tinto \t R$ 25.00\n (3) vinho branco suave \t R$ 35.00 \n (4) vinho seco branco \t 30.00 \n (5) vinho sem alcool \t R$ 40.00 \n")
+    print(f"esolha um dos vinhos da lista (1) vinho suave tinto \t R$ 15.00 \n (2)vinho seco tinto \t R$ 25.00\n (3) vinho branco suave \t R$ 35.00 \n (4) vinho seco branco \t 30.00 \n (5) vinho sem alcool \t R$ 40.00 \n")
 
 vinho = int(input())
 print("em qual qualtidade deseja adquirir este vinho?")
