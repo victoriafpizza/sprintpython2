@@ -25,6 +25,6 @@ match opcao :
         print(f"{nome}, Até hoje você já reciclou xxxxkg de lixo\nSendo eles:\nxxkg\tde metal\nxxkg\tde papel\nxxkg\tde plástico\nxxkg\tde vidro\nContinue progredindo, o nosso planeta agradeçe!")
     case 4 : 
         print(f"{nome}, obrigado por preservar o meio-ambiente conosco, volte sempre!")
-        break #vou tentara arrumar aqui depois
+        break #vou tentar arrumar aqui depois
     case _ :       
         print("Por favor, digite ouma das opções!")
