@@ -1,11 +1,22 @@
 # Tentando fazer o de python mas de outra forma, pode ser que de certo (Ou não) - emma
 
-# import re
-
+nome = "lero-lero"
 print(f"Bem-vindo a reUse.\nPor favor insira seu PIN.")
 pin = ""
+frase = f"Bem vindo {nome}!"
+cont = 0
 
-
+while pin != "123456" :
+    print("Digite o seu pin:")
+    pin = int(input())
+    cont += 1
+    if cont >= 2:
+        frase = "Esqueceu o seu pin? Recupere ele pelo app ou no Website!"
+        break
+    else :
+        frase = "Não é cliente da reUse?! Se cadastre através do QR CODE abaixo! \nLembre-se, para descartar o lixo não é preciso ser cadastrado no sistema! Você só precisa despeja-lo no outro lado da lixeira :)"      
+        break
+print(frase)
 
 
 # # Dando boas vindas ao usuário, e pedindo a identificação.
