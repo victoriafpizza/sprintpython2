@@ -1,9 +1,7 @@
 # Tentando fazer o de python mas de outra forma, pode ser que de certo (Ou não) - emma
 
-
-
 # Dando boas vindas ao usuário, e pedindo a identificação.
-print(f"Bem-vindo a reUse. \nPor favor insira seu PIN.")
+print(f"Bem-vindo a reUse.\nPor favor insira seu PIN.")
 pin = int(input())
 
 # Reconhecendo a identificação e recebendo a infromação do material reciclado
@@ -35,14 +33,11 @@ while continua.lower() == "sim":
         case _ :       
             print("Por favor, digite uma das opções!")
 
-    # total = total + subtotal
-
-
-    # Continuando u não a compra
+    # Continuando ou não
     print("Deseja fazer outra operação?\n Responda Sim ou não.")
     continua = input()
 
-# Devolvendo dados
+
 
             
 # while sn == 1:
