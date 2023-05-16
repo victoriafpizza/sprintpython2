@@ -25,7 +25,7 @@ while continua.lower() == "sim":
 
     match opcao :
         case 1:
-            print(f"Parabéns{nome}, você ja aculmulou XXXX pontos com a reciclagem\nExtrato:\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp")
+            print(f"Parabéns {nome}, você ja aculmulou XXXX pontos com a reciclagem\nExtrato:\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp")
         case 2:
             print(f"{nome}, você já ganhou R$XXXX, apenas reciclando!\nExtrato:\ndd/mm/aaaa\tR$XX\ndd/mm/aaaa\tR$XX\ndd/mm/aaaa\tR$XX\nContinue reciclando para ganhar mais e assim resgatar mais cupons e prêmios")
         case 3 :
