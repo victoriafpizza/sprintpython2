@@ -25,9 +25,9 @@ while continua.lower() == "sim":
 
     match opcao :
         case 1:
-            print(f"Parabéns{nome}, você ja aculmulou XXXX pontos com a reciclagem\nExtrato:\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXX")
+            print(f"Parabéns{nome}, você ja aculmulou XXXX pontos com a reciclagem\nExtrato:\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp")
         case 2:
-            print(f"{nome}, você já ganhou R$XXXX, apenas reciclando!\nExtrato:\ndd/mm/aaaa\tR$XX\ndd/mm/   aaaa\tR$XX\ndd/mm/aaaa\tXXxp\nContinue reciclando para ganhar mais e assim resgatar mais cupons e prêmios")
+            print(f"{nome}, você já ganhou R$XXXX, apenas reciclando!\nExtrato:\ndd/mm/aaaa\tR$XX\ndd/mm/aaaa\tR$XX\ndd/mm/aaaa\tR$XX\nContinue reciclando para ganhar mais e assim resgatar mais cupons e prêmios")
         case 3 :
             print(f"{nome}, Até hoje você já reciclou xxxxkg de lixo\nSendo eles:\nxxkg\tde metal\nxxkg\tde papel\nxxkg\tde plástico\nxxkg\tde vidro\nContinue progredindo, o nosso planeta agradeçe!")
         case _ :       
@@ -37,10 +37,12 @@ while continua.lower() == "sim":
     print("Deseja fazer outra operação?\n Responda Sim ou não.")
     continua = input()
 
+print("Obrigado por preservar o meio-ambiente conosco, volte sempre!")
+
 
 
             
 # while sn == 1:
-#     print("Obrigado por preservar o meio-ambiente conosco, volte sempre!")
+#     
 #     break     
 # if sn == 2 : print("Voltando para o menu inicial")
