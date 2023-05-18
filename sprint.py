@@ -1,4 +1,3 @@
-# Tentando fazer o de python mas de outra forma, pode ser que de certo (Ou não) - emma
 
 # Dando boas vindas ao usuário, e pedindo a identificação.
 print(f"Bem-vindo a reUse.\nPor favor insira seu PIN.")
