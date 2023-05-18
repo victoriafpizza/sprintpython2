@@ -32,7 +32,7 @@ while continua.lower() == "sim":
             print("Por favor, digite uma das opções!")
 
     # Continuando ou não
-    print("Deseja fazer outra operação?\n Responda Sim ou não.")
+    print("Deseja fazer outra operação?\nResponda Sim ou não.")
     continua = input()
 
 # mensagem final 
