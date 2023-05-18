@@ -1,72 +1,40 @@
+# Tentando fazer o de python mas de outra forma, pode ser que de certo (Ou não) - emma
+
 # Dando boas vindas ao usuário, e pedindo a identificação.
-print(f"Bem-vindo a reUse. \n  Por favor insira seu PIN .")
+print(f"Bem-vindo a reUse.\nPor favor insira seu PIN.")
 pin = int(input())
 
 # Reconhecendo a identificação e recebendo a infromação do material reciclado
 if pin == 123456 :
     nome = "Astrogildo"
-    print(f"Bem vindo {nome}, por favor selecione qual material você gostaria de descartar\n [1] \t Papel \n [2] \t Metal \n [3] \t Plástico \n [4] \t Vidro")
 elif pin == 654321 :
     nome = "Pafuncia"
-    print(f"Bem vindo {nome}, por favor selecione qual material você gostaria de descartar\n [1] \t Papel \n [2] \t Metal \n [3] \t Plástico \n [4] \t Vidro")
 else :
-    print("Não é cliente da reUse?! Se cadastre através do QR CODE abaixo! \nOu apenas descarte o lixo do outro lado da lixeira.")
+    print("Não é cliente da reUse?! Se cadastre através do QR CODE abaixo! \nLembre-se, para descartar o lixo não é preciso ser cadastrado no sistema! Você só precisa despeja-lo no outro lado da lixeira :)")
 
-
-
-
-
-#variaveis para ajudar no calculo dos prêmios
-match reciclagem :
-    case 1:
-        pontuacao = 10 * kgsReciclados
-        msgfinal += f"voce reciclou {kgsReciclados}, \nsua pontuação para premios é: {pontuacao}"
-    case 2:
-        pontuacao = 20 * kgsReciclados
-        msgfinal += f"voce reciclou {kgsReciclados}, \nsua pontuação para premios é {pontuacao}"
-    case 3 :
-        pontuacao = 30 * kgsReciclados
-        msgfinal += f"voce reciclou {kgsReciclados}, \nsua pontuação para premios é {pontuacao}"
-    case 4 : 
-        pontuacao = 40 * kgsReciclados
-        msgfinal += f"voce reciclou {kgsReciclados}, \nsua pontuação para premios é {pontuacao}"
-    case 5 : 
-        pontuacao = 50 * kgsReciclados
-        msgfinal += f"voce reciclou {kgsReciclados}, \nsua pontuação para premios é {pontuacao}"
-    case _ :       
-        print(" por favor insira quantos quilos voce reciclou!")
-    
-
+# Armazenando a opção de continuar
 continua = "sim"
 
-while continua.lower == "sim" : 
-    print("Por favor selecione qual material você gostaria de descartar\n [1] \t Papel \n [2] \t Metal \n [3] \t Plástico \n [4] \t Vidro")
+# Exibindo as opções e seus conteúdos
+while continua.lower() == "sim":
+    # exibindo opções
+    print(f"Bem vindo {nome}, O que você deseja consultar?\n [1] \t extrato de pontos \n [2] \t Saques antigos \n [3] \t Cotação de material")
 
-    print("deseja continuar reciclando? (responda sim ou nao)")
+    opcao = int(input()) 
+
+    match opcao :
+        case 1:
+            print(f"Parabéns {nome}, você ja aculmulou XXXX pontos com a reciclagem\nExtrato:\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp\ndd/mm/aaaa\tXXxp")
+        case 2:
+            print(f"{nome}, você já ganhou R$XXXX, apenas reciclando!\nExtrato:\ndd/mm/aaaa\tR$XX\ndd/mm/aaaa\tR$XX\ndd/mm/aaaa\tR$XX\nContinue reciclando para ganhar mais e assim resgatar mais cupons e prêmios")
+        case 3 :
+            print(f"{nome}, Até hoje você já reciclou xxxxkg de lixo\nSendo eles:\nxxkg\tde metal\nxxkg\tde papel\nxxkg\tde plástico\nxxkg\tde vidro\nContinue progredindo, o nosso planeta agradeçe!")
+        case _ :       
+            print("Por favor, digite uma das opções!")
+
+    # Continuando ou não
+    print("Deseja fazer outra operação?\n Responda Sim ou não.")
     continua = input()
 
-    subtotal = total = 0
-
-print(f"seu total de quilos reciclados é {kgsReciclados} o seu total de pontos é {pontuacao}")
-
-if pontuacao > 100 :
-    print("voce tem direito a ...")
-elif pontuacao > 200 :
-    print("voce tem direito a ...")
-elif pontuacao > 300 :
-    print("voce tem direito a ...")
-elif pontuacao > 400 :
-    print("voce tem direito a ...")
-elif pontuacao > 500 :
-    print("voce tem direito a ...")
-else :
-    print("verifique seus dados, e continue reciclando com a Cyber Wave!")
-
-print("deseja continuar comprando? \n (responda sim ou não)")
-continua = input()
-
-print(f"{nome}, foi um prazer atende-lo. Volte em breve!")
-
-msgfinal = f"Sua pontuação final é {pontuacao}, volte em breve {nome}"
-
-print(msgfinal)
+# mensagem final 
+print("Obrigado por preservar o meio-ambiente conosco, volte sempre!")
