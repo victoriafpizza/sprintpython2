@@ -32,3 +32,19 @@ def validacao_usuario() :
             print("Não é cliente da reUse?! Escolha a opção de cadastro!\nLembre-se, para descartar o lixo não é preciso ser cadastrado no sistema! Você só precisa despejá-lo no outro lado da lixeira :)")
             continue  # Volta ao início do loop para tentar novamente
 
+def criar_usuario():
+    
+
+# Desejando boas vindas ao usuário
+print("*************************")
+print("****Bem Vindo a reUse****")
+print("*************************")
+
+# Exibindo o menu inicial
+print("Escolha uma opção:\n(1) Login\n(2) SignIn")
+escolha_menu_inicial = int(input())
+
+if escolha_menu_inicial == 1 :
+    print(validacao_usuario)
+else : 
+
