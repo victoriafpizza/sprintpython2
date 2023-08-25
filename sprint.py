@@ -33,7 +33,9 @@ def validacao_usuario() :
             continue  # Volta ao início do loop para tentar novamente
 
 def criar_usuario():
-    
+    print("Seja bem Vindo!\nPor Favor, insira seu nome:")
+    nome_usuario = str(input())
+    # Fazer um sorteio p\ gerar o pin (com 5 num)
 
 # Desejando boas vindas ao usuário
 print("*************************")
@@ -47,4 +49,4 @@ escolha_menu_inicial = int(input())
 if escolha_menu_inicial == 1 :
     print(validacao_usuario)
 else : 
-
+    print(criar_usuario)
