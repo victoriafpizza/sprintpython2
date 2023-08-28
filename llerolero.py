@@ -26,3 +26,29 @@ while continua.lower() == "sim":
 
 # mensagem final 
 print("Obrigado por preservar o meio-ambiente conosco, volte sempre!")
+
+
+
+
+
+
+
+
+
+
+
+# Função de validação de usuário
+def validacao_usuario() :
+    while login_do_usuario:
+        print("Por favor insira seu PIN.")
+        pin = input()
+
+        # Validando o pin
+        if pin in usuarios.values():
+            for usuario, dados in usuarios.items():
+                if dados["Pin"] == pin:
+                    print(f"Bem-vindo, {usuario}! Estamos felizes por ter você de volta.")
+                    break
+        else:
+            print("Não é cliente da reUse?! Escolha a opção de cadastro!\nLembre-se, para descartar o lixo não é preciso ser cadastrado no sistema! Você só precisa despejá-lo no outro lado da lixeira :)")
+            continue  # Volta ao início do loop para tentar novamente

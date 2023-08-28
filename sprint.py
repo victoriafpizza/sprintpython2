@@ -42,8 +42,6 @@ def gerar_pin_aleatorio():
     return pin
 
 
-
-
 def criar_usuario():
     print("Seja bem Vindo!\nPor Favor, insira seu nome:")
     nome_usuario = str(input())
