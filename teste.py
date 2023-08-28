@@ -54,7 +54,7 @@ if escolha_menu_inicial == 1 :
                     break
         else:
             print("Não é cliente da reUse?! Escolha a opção de cadastro!\nLembre-se, para descartar o lixo não é preciso ser cadastrado no sistema! Você só precisa despejá-lo no outro lado da lixeira :)")
-            continue
+            break
 elif escolha_menu_inicial == 2 :
     print("Por Favor, insira seu nome:")
     nome_usuario = input()
@@ -67,6 +67,7 @@ elif escolha_menu_inicial == 2 :
     
     print(f"Bem vindx {nome_usuario}!\n o seu pin será: {pin_aleatorio}. Lembre-se, ele é unico, guarde ele com carinho :)")
 else : 
-    print("")
+    if escolha_menu_inicial >= 3 :
+        print("Por favor, escolha uma opção válida")
 
     
