@@ -71,8 +71,9 @@ while nav_menu_inicial:
         pin_aleatorio = gerar_pin_aleatorio()
         
         # Adicionando novo usuário ao dicionário
-
-        
+        usuarios[nome_usuario] = {
+            "Pin": pin_aleatorio
+        }
 
         # Exibindo novo usuário e exibindo o pin gerado
         print(f"Bem vindx {nome_usuario}!\n o seu pin será: {pin_aleatorio}. Lembre-se, ele é unico, guarde ele com carinho :)")
