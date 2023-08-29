@@ -34,19 +34,10 @@ def gerar_pin_aleatorio():
     pin = ''.join(str(random.randint(0, 9)) for _ in range(5))
     return pin
 
-# Função para atualizar os usuários em tempo real (permitindo que o login seja feito depois de criar um novo pin)
-def atualizando_usuarios() :
-        usuarios[nome_usuario] = {
-            "Pin": pin_aleatorio
-        }
 
-
-
-
-
-#######################
+######################
 # Programa principal #
-#######################
+######################
 
 # Exibindo o menu inicial primário, em formato de loop
 
@@ -77,10 +68,14 @@ while nav_menu_inicial:
         if re.search("\d",nome_usuario) :
             erro = "Nomes não podem conter números."
             raise ValueError
-        print(f"Ok ")
         # Fazendo um sorteio p\ gerar o pin (com 5 num)
         pin_aleatorio = gerar_pin_aleatorio()
         
+        # Atualizando o dicionário usuários com os novos dados gerados
+        usuarios[nome_usuario] = {
+            "Pin": pin_aleatorio
+        }
+
         # Exibindo novo usuário e exibindo o pin gerado
         print(f"Bem vindx {nome_usuario}!\n o seu pin será: {pin_aleatorio}. Lembre-se, ele é unico, guarde ele com carinho :)")
     else : 
