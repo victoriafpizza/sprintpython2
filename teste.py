@@ -36,16 +36,18 @@ def gerar_pin_aleatorio():
 
 # Programa principal 
 
-# Desejando boas vindas ao usuário
-print("*************************")
-print("****Bem Vindo a reUse****")
-print("*************************")
+
 
 # Exibindo o menu inicial primário, em formato de loop
 
 nav_menu_inicial = True
 
 while nav_menu_inicial: 
+    # Desejando boas vindas ao usuário
+    print("*************************")
+    print("****Bem Vindo a reUse****")
+    print("*************************")
+    # Menu inicial
     print("Escolha uma opção:\n(1) LogIn\n(2) SignIn")
     escolha_menu_inicial = int(input())
 
@@ -54,9 +56,10 @@ while nav_menu_inicial:
         pin = input()
         if pin in usuarios.values():
             print(f"Olá {usuarios}")
+            break
         else:
             print("Não é cliente da reUse?! Escolha a opção de cadastro!\nLembre-se, para descartar o lixo não é preciso ser cadastrado no sistema! Você só precisa despejá-lo no outro lado da lixeira :)")
-            nav_menu_inicial = False
+            nav_menu_inicial = True
     elif escolha_menu_inicial == 2 :
         print("Por Favor, insira seu nome:")
         nome_usuario = input()
@@ -67,6 +70,11 @@ while nav_menu_inicial:
         # Fazendo um sorteio p\ gerar o pin (com 5 num)
         pin_aleatorio = gerar_pin_aleatorio()
         
+        # Adicionando novo usuário ao dicionário
+
+        
+
+        # Exibindo novo usuário e exibindo o pin gerado
         print(f"Bem vindx {nome_usuario}!\n o seu pin será: {pin_aleatorio}. Lembre-se, ele é unico, guarde ele com carinho :)")
     else : 
         if escolha_menu_inicial >= 3 :
