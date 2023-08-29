@@ -34,9 +34,19 @@ def gerar_pin_aleatorio():
     pin = ''.join(str(random.randint(0, 9)) for _ in range(5))
     return pin
 
-# Programa principal 
+# Função para atualizar os usuários em tempo real (permitindo que o login seja feito depois de criar um novo pin)
+def atualizando_usuarios() :
+        usuarios[nome_usuario] = {
+            "Pin": pin_aleatorio
+        }
 
 
+
+
+
+#######################
+# Programa principal #
+#######################
 
 # Exibindo o menu inicial primário, em formato de loop
 
@@ -61,6 +71,7 @@ while nav_menu_inicial:
             print("Não é cliente da reUse?! Escolha a opção de cadastro!\nLembre-se, para descartar o lixo não é preciso ser cadastrado no sistema! Você só precisa despejá-lo no outro lado da lixeira :)")
             nav_menu_inicial = True
     elif escolha_menu_inicial == 2 :
+
         print("Por Favor, insira seu nome:")
         nome_usuario = input()
         if re.search("\d",nome_usuario) :
@@ -70,11 +81,6 @@ while nav_menu_inicial:
         # Fazendo um sorteio p\ gerar o pin (com 5 num)
         pin_aleatorio = gerar_pin_aleatorio()
         
-        # Adicionando novo usuário ao dicionário
-        usuarios[nome_usuario] = {
-            "Pin": pin_aleatorio
-        }
-
         # Exibindo novo usuário e exibindo o pin gerado
         print(f"Bem vindx {nome_usuario}!\n o seu pin será: {pin_aleatorio}. Lembre-se, ele é unico, guarde ele com carinho :)")
     else : 
