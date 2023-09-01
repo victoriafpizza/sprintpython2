@@ -5,25 +5,94 @@ import re
 # Definindo usuários
 usuarios = {
     "ADM" : {
-        "Pin" : "11111"
+        "Pin" : "11111",
+        "Dados" : {
+            "reciclagem_kg" : {
+                "Papel" : 0,
+                "Plástico" : 0,
+                "Vidro" : 0,
+                "Metal" : 0,
+                "Eletrônicos" : 0
+            },
+        },
     }, 
+
     "Emanuelle" : {
-        "Pin" : "97973"
+        "Pin" : "97973",
+        "Dados" : {
+            "reciclagem_kg" : {
+                "Papel" : 0,
+                "Plástico" : 0,
+                "Vidro" : 0,
+                "Metal" : 0,
+                "Eletrônicos" : 0
+            },
+        },
     },
+
     "Victória" : {
-        "Pin" : "97986"
+        "Pin" : "97986",
+        "Dados" : {
+            "reciclagem_kg" : {
+                "Papel" : 0,
+                "Plástico" : 0,
+                "Vidro" : 0,
+                "Metal" : 0,
+                "Eletrônicos" : 0
+            },
+        },
     }, 
+
     "Enzo" : {
-        "Pin" : "10253"
+        "Pin" : "10253",
+        "Dados" : {
+            "reciclagem_kg" : {
+                "Papel" : 0,
+                "Plástico" : 0,
+                "Vidro" : 0,
+                "Metal" : 0,
+                "Eletrônicos" : 0
+            },
+        },
     },
+
     "Murilo" : {
-        "Pin" : "54321"
+        "Pin" : "54321",
+        "Dados" : {
+            "reciclagem_kg" : {
+                "Papel" : 0,
+                "Plástico" : 0,
+                "Vidro" : 0,
+                "Metal" : 0,
+                "Eletrônicos" : 0
+            },
+        },
     },
+
     "Ricardo" : {
-        "Pin" : "12345"
+        "Pin" : "12345",
+        "Dados" : {
+            "reciclagem_kg" : {
+                "Papel" : 0,
+                "Plástico" : 0,
+                "Vidro" : 0,
+                "Metal" : 0,
+                "Eletrônicos" : 0
+            },
+        },
     },
+
     "" : {
-        "Pin" : ""
+        "Pin" : "",
+        "Dados" : {
+            "reciclagem_kg" : {
+                "Papel" : 0,
+                "Plástico" : 0,
+                "Vidro" : 0,
+                "Metal" : 0,
+                "Eletrônicos" : 0
+            },
+        },
     }
 }
 
@@ -63,7 +132,6 @@ while nav_menu_inicial:
                     break
         else:
             print("Não é cliente da reUse?! Escolha a opção de cadastro!\nLembre-se, para descartar o lixo não é preciso ser cadastrado no sistema! Você só precisa despejá-lo no outro lado da lixeira :)")
-            nav_menu_inicial = True
     elif escolha_menu_inicial == 2 :
 
         print("Por Favor, insira seu nome:")
