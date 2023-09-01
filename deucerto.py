@@ -2,6 +2,20 @@
 import random
 import re
 
+
+# Definindo a cotação dos pontos 
+cotacao_pontos = {
+    "material/Kg" : {
+        "Papel" : 20,
+        "Plástico" : 25,
+        "Vidro" : 15,
+        "Metal" : 10,
+        "Eletrônicos" : 30
+    },
+}
+
+
+
 # Definindo usuários
 usuarios = {
     "ADM" : {
@@ -14,6 +28,13 @@ usuarios = {
                 "Metal" : 0,
                 "Eletrônicos" : 0
             },
+            "Pontos" : {
+                "Papel" : 0, #cotação-pontos * reciclagem-kg
+                "Plástico" : 0,
+                "Vidro" : 0,
+                "Metal" : 0,
+                "Eletrônicos" : 0
+            }
         },
     }, 
 
