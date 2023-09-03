@@ -37,6 +37,8 @@ print("Obrigado por preservar o meio-ambiente conosco, volte sempre!")
 
 
 
+
+
 # Função de validação de usuário
 def validacao_usuario() :
     while login_do_usuario:

@@ -23,14 +23,21 @@ def opcao_reciclar() :
                 continue
       
 
-        
+# Criando o menu secundário        
+nav_menu_secundario = True
+# Adicionando Loop no menu secundário
+while nav_menu_secundario:
+    print("Escolha uma opção:\n(1)\tReciclar\n(2)\tExtrato de pontos\n(3)\tCotação Atual de materiais\n(4)\tResgatar recompensas")
+    escolha_menu_secundario = int(input())
+
+    if escolha_menu_secundario == 1:
+        print(opcao_reciclar)
+    elif escolha_menu_secundario == 2 :
+        print("Lerolero")
 
 
 
 
-
-# Criando o menu secundário
-print("Escolha uma opção:\n(1)\tReciclar\n(2)\tExtrato de pontos\n(3)\tCotação Atual de materiais\n(4)\tResgatar recompensas")
 
 
 
