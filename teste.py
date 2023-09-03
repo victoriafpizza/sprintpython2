@@ -13,7 +13,9 @@ def opcao_reciclar() :
     escolha_reciclar = int(input())
     if escolha_reciclar == 1:
         print(f"Material escolhido:\tPapel\nPeso:\t{sorteio_entrada_dados}")
-        confirmando_operação = True
+
+        # Confirmando a operação
+        confirmar_op = True
         while confirmar_op:
             print("Confirmar operção\n(1)\tSim\n(2)\tNão")
             confirmar_op = int(input())
