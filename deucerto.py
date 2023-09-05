@@ -20,6 +20,10 @@ cotacao_pontos = {
 usuarios = {
     "ADM" : {
         "Pin" : "11111",
+        "Identificação" : {
+            "Email" : "admin@reuse.com",
+            "Telefone" : "00 00000-0000"
+        },
         "Dados" : {
             "reciclagem_kg" : {
                 "Papel" : 0,
