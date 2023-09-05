@@ -18,5 +18,21 @@ Notas sobre o programa (Por emma, para o grupo, vai ser totalmente descartado an
     1.5 Dados - Um nested dictionary que vai conter as prinicipais funções do programa, até porque lá vai ter a maior quantidade de informações possíveis sobre o usuário, sendo elas:
         1.5.1 {reciclagem_kg} Kg de reciclagem - A quantidade total de kg reciclados pelo usuário ate o momento de consulta.
         1.5.2 {pontos} Pontos - A quantidade total de pontos do usuário até a hora da consulta, eles são definidos através dos KG reciclados multiplicados a cotação de pontos - que mais pra frente vai ser descrito corretamente.
-    1.6 Cotação de pontos - Em formato de dicionário, vai armazenar a quantidade de pontos equivaleentes a cada 
+    1.6 Cotação de pontos - Em formato de dicionário, vai armazenar a quantidade de pontos equivalentes de cada materia pela cotação material/kg (no caso em referência a ao equilavlente de pontos a cada kg despejado). A cotação de pontos pode ser exibida ao usuário.
+
+
+2 - Estabelecendo as principais funções
+    Em forma de menu, separadoos em camadas 
+
+    2.1 {nav_menu_inicial} Menu inicial - Onde o usuário pode escolher duas opções, sendo elas:
+        2.1.1 Entrar - informando seu PIN e os 4 útimos números do telefone, caso confirmados o usuário tem acesso ao menu secundário.
+            > Possíveis erros e suas soluções:
+                a. PIN ou Número incorretos: A possibilidade de até 3 tentativas, caso ocorra mais umma vez o acesso é bloqueado sendo apenas possível de reativálo pelo usuário administrado.
+                b. Dados informados não existentes: Redirecionamento para a página de cadastro.
+        2.1.2 Cadastrar-se - O usuários pode se cadastrar informando, ordenadamente:
+            > Nome 
+            > Email 
+            > Telefone celular
+            
+
 
