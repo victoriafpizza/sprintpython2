@@ -11,9 +11,9 @@ Notas sobre o programa (Por emma, para o grupo, vai ser totalmente descartado an
     Todas as informações que vamos precisar para que o programa consiga funcionar 
     
     1.1 Usuário - O nome do usuário, informado ao sistenma na hora do cadastro.
-    1.2 Pin - Principal fonte de identificação, único para cada usuário - pode ser pré definindo pelo usuario admnistrador ou no protocolo normal - no caso vai ser gerado aleatóriamente via sorteio (import random)
+    1.2 Pin - Principal fonte de identificação e com 5 números armazenados como string, único para cada usuário - pode ser pré definindo pelo usuario admnistrador ou no protocolo normal - no caso vai ser gerado aleatóriamente via sorteio (import random)
     1.3 Email - Informado ao sistema atraves do cadastro, utilizado para a comunicação com o cliente (*Vamos armazenar o dado no programa mas não necessáriamente vamos utilizar praticamente ele - até porque não entramos ainda no tópico na matéria*)
-    1.4 Número de telefone celular - informado ao sistema na hora do cadastro, tambémm utilizado para a comunicação com o cliente. 
+    1.4 Número de telefone celular - informado ao sistema na hora do cadastro, também utilizado para a comunicação com o cliente. 
     NOTA. Vale deixar claro que a implementação de ambos email e celular no cadastro fomenta a oportunidade perfeita para utilizar o regex
     1.5 Dados - Um nested dictionary que vai conter as prinicipais funções do programa, até porque lá vai ter a maior quantidade de informações possíveis sobre o usuário, sendo elas:
         1.5.1 {reciclagem_kg} Kg de reciclagem - A quantidade total de kg reciclados pelo usuário ate o momento de consulta.
@@ -33,6 +33,8 @@ Notas sobre o programa (Por emma, para o grupo, vai ser totalmente descartado an
             > Nome 
             > Email 
             > Telefone celular
-            
+            Ressaltando. O pin é automaticamente gerado na função de cadastro (Com 5 números)
+            Após o cadastro o PIN é exibido ao usuário. A ação "cadastrar-se" deve ser confirmada pelo usuário, nela deve ser exibido todos os dados para que eles sejam confirmados.
+    2.2 {nav_menu_secundario} Menu secundário e personalizado para o usuári, ele vai ser o galho principal para a consulta de dados pessoais.  
 
 
