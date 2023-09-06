@@ -7,6 +7,9 @@ ________________________________________________________________________________
 
 Notas sobre o programa (Por emma, para o grupo, vai ser totalmente descartado antes de ser entregue)
 
+* Padrões principais
+> Após cada operação, o usuário deve confirmar antes de finaliza-la (E essa operação vai estar armazenada em uma função)
+
 1 - Estabelecendo os dados
     Todas as informações que vamos precisar para que o programa consiga funcionar 
     
@@ -35,6 +38,16 @@ Notas sobre o programa (Por emma, para o grupo, vai ser totalmente descartado an
             > Telefone celular
             Ressaltando. O pin é automaticamente gerado na função de cadastro (Com 5 números)
             Após o cadastro o PIN é exibido ao usuário. A ação "cadastrar-se" deve ser confirmada pelo usuário, nela deve ser exibido todos os dados para que eles sejam confirmados.
-    2.2 {nav_menu_secundario} Menu secundário e personalizado para o usuári, ele vai ser o galho principal para a consulta de dados pessoais.  
+    2.2 {nav_menu_secundario} Menu secundário e personalizado para o usuári0, ele vai ser o galho principal para a consulta de dados pessoais.  
+        2.2.1 Cotação de pontos atual por KG e cada material, além da cotação de pontos por dinheiro - O usuário tem acesso total á cotação de pontos atual.
+        2.2.2 Extrato de pontos / Total de pontos atuais - o usuário recebe o histórico de entrada e saida de pontos, e a situação de pontos atuaias do usuário.
+        2.2.3 Informações - O usuário tem acesso a todos os seus dados cadastrados no sistema.
+        2.2.4 "Sacar Pontos" - O usuário pode sacar seus pontos via pix.
+        *****NOTA. Essa parte específica do programa é apenaas um simulação da restirada de pontos, que não necessáriamente vai acontecer desta forma.
+        2.2.5 Reciclar - Em forma de menu, vai ser a simulaçao do usuário reciclando, e assim a entrada de dados. Assim como sacar pontos n~~ao necessáriamente pode fazer pare do sistema original. 
+    2.3 Menu reciclar (2.2.5)
+        2.3.1 Escolha do material - O usuáros vai digitaar a opção correspondente ao material a ser reciclado
+            > Logo após a esolha vai confirmar a operação
+
 
 
