@@ -5,10 +5,11 @@ Decidimos que as funcionalidades implementadas girariam em torno da ODS (Objetiv
 Atravez da produção de lixeiras inteligentes juntamente à um software que registra a quantidade total de componentes reciclados pelo indivíduo, e a partir disso gera recompensas de empresas parceiras. Assim como os “elos” de reciclagem que evoluem e vão formando uma reputação, e fazem os usuários terem mais interesse em contribuir
 __________________________________________________________________________________________________________________________________________________
 
-Notas sobre o programa (Por emma, para o grupo, vai ser totalmente descartado antes de ser entregue)
+Notas sobre o programa (Por emma!!!, para o grupo, vai ser totalmente descartado antes de ser entregue)
 
 * Padrões principais
 > Após cada operação, o usuário deve confirmar antes de finaliza-la (E essa operação vai estar armazenada em uma função)
+> Assim que cada operação for confirmada, terá um novo menu perguntando se o usuário deseja realizar uma nova operação.
 
 1 - Estabelecendo os dados
     Todas as informações que vamos precisar para que o programa consiga funcionar 
@@ -30,7 +31,7 @@ Notas sobre o programa (Por emma, para o grupo, vai ser totalmente descartado an
     2.1 {nav_menu_inicial} Menu inicial - Onde o usuário pode escolher duas opções, sendo elas:
         2.1.1 Entrar - informando seu PIN e os 4 útimos números do telefone, caso confirmados o usuário tem acesso ao menu secundário.
             > Possíveis erros e suas soluções:
-                a. PIN ou Número incorretos: A possibilidade de até 3 tentativas, caso ocorra mais umma vez o acesso é bloqueado sendo apenas possível de reativálo pelo usuário administrado.
+                a. PIN ou Número incorretos: A possibilidade de até 3 tentativas, caso ocorra mais uma vez o acesso é bloqueado sendo apenas possível de reativálo pelo usuário administrado.
                 b. Dados informados não existentes: Redirecionamento para a página de cadastro.
         2.1.2 Cadastrar-se - O usuários pode se cadastrar informando, ordenadamente:
             > Nome 
@@ -44,10 +45,17 @@ Notas sobre o programa (Por emma, para o grupo, vai ser totalmente descartado an
         2.2.3 Informações - O usuário tem acesso a todos os seus dados cadastrados no sistema.
         2.2.4 "Sacar Pontos" - O usuário pode sacar seus pontos via pix.
         *****NOTA. Essa parte específica do programa é apenaas um simulação da restirada de pontos, que não necessáriamente vai acontecer desta forma.
-        2.2.5 Reciclar - Em forma de menu, vai ser a simulaçao do usuário reciclando, e assim a entrada de dados. Assim como sacar pontos n~~ao necessáriamente pode fazer pare do sistema original. 
+        2.2.5 Reciclar - Em forma de menu, vai ser a simulaçao do usuário reciclando, e assim a entrada de dados. Assim como sacar pontos não necessáriamente pode fazer pare do sistema original. 
     2.3 Menu reciclar (2.2.5)
         2.3.1 Escolha do material - O usuáros vai digitaar a opção correspondente ao material a ser reciclado
-            > Logo após a esolha vai confirmar a operação
+            > Logo após a escolha vai confirmar a operação
+    2.4 Menu do administrador - Menu personalizado apenas para o administrador.
+        2.4.1 Cotação de pontos atual por KG e cada material, além da cotação de pontos por dinheiro - O administrador tem acesso aos valores e pode mudá-los.
+        2.4.2 Lista de usuários - Acesso a todos os usuários do sistema, nele existem um menu com as as seguintes opções;
+            > Alterar dados - Onde digitando o pin de cada usuário pode mudar as suas informações.
+            > Excluir usuário - O administrador pode excluir usuários 
+            > Adicionar usuário - Pode adicionar usuários novos, por atalho do cadastro.
+    
 
 
 
